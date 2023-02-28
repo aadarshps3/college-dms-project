@@ -1,0 +1,54 @@
+{% extends 'teacher_temp/index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="card">
+  <div class="card-body">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <form method="get" class="form-inline d-flex">
+        {{subjectFilter.form|crispy}}
+        <button class="btn btn-info" style="float:right" type="submit">Search</button>
+      </form>
+    </div>
+    <h4 class="card-title">Internal Marks</h4>
+    <div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Student</th>
+
+        <th scope="col">Roll_no</th>
+      <th scope="col">Semester</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Seminar</th>
+      <th scope="col">Assignment</th>
+      <th scope="col">Attendance</th>
+      <th scope="col">Test Paper</th>
+      <th scope="col">Total</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in data %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <td>{{i.student}}</td>
+       <td>{{i.Roll_No}}</td>
+      <td>{{i.semester}}</td>
+      <td>{{i.subject}}</td>
+      <td>{{i.seminar}}</td>
+      <td>{{i.assignment}}</td>
+      <td>{{i.attendance}}</td>
+      <td>{{i.test_paper}}</td>
+      <td>{{i.get_total_marks}}</td>
+      <td><a href="{% url 'del_int3' i.id %}" class="btn btn-danger">Delete</a></td>
+
+      <td></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+      </div>
+  </div>
+</div>
+{% endblock %}

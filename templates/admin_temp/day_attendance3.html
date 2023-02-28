@@ -1,0 +1,42 @@
+{% extends 'admin_temp/index.html' %}
+{% block content %}
+<div class="card">
+    <div class="card-body" >
+            <h5 class="card-title">STUDENT ATTENDANCE ON {{date}}</h5>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">SINo</th>
+                <th scope="col">Name</th>
+                <th scope="col">Course</th>
+                <th scope="col">Joining Date</th>
+                <th scope="col">Attendance</th>
+                <th scope="col">Time</th>
+                <th scope="col">Delete</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for attendance in attendancesx3 %}
+            <tr>
+                <td>{{forloop.counter }}</td>
+                <td>{{attendance.student.name}}</td>
+                <td>{{attendance.student.course }}</td>
+                <td>{{attendance.student.year_of_joining }}</td>
+                <td>
+                    {%  if attendance.attendance == "Present" %}
+                    <p class="text-primary">{{attendance.attendance}}</p>
+                    {% else %}
+                    <p class="text-danger">{{attendance.attendance}}</p>
+                    {% endif %}
+                </td>
+                <td>{{attendance.time}}</td>
+                <td><a href="{% url 'delete_attendance_admin3' attendance.id %}" class="btn btn-danger">Delete</a></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}

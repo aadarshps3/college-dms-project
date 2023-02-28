@@ -1,0 +1,27 @@
+{% extends 'student_temp/index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">TimeTable</h4>
+    <div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Semester</th>
+      <th scope="col">Timetable</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in data %}
+    <tr>
+      <td><mark>{{i.semester}}</mark></td>
+      <td><a href="{{i.files.url}}" class="btn btn-info" download>Download</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+      </div>
+  </div>
+</div>
+{% endblock %}

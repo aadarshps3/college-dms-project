@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load static %}
+{% load crispy_forms_tags %}
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Student</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href=" {% static 'panel/vendors/typicons/typicons.css' %} ">
+  <link rel="stylesheet" href=" {% static 'panel/vendors/css/vendor.bundle.base.css' %} ">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href=" {% static 'panel/css/vertical-layout-light/style.css' %} ">
+  <!-- endinject -->
+  <link rel="shortcut icon" href=" {% static 'panel/images/favicon.png' %} " />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center auth px-0">
+        <div class="row w-100 mx-0">
+          <div class="col-lg-4 mx-auto">
+            <div class="auth-form-light text-left py-5 px-4 px-sm-5">
+              <div class="brand-logo">
+                <img src=" {% static 'panel/images/csi-logo.png' %} " alt="logo">
+              </div>
+              <h4>Student Register Form</h4>
+              <form class="pt-3" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                  <label class="form-label">Username*</label>
+                  <input type="text" class="form-control" name="username" aria-describedby="emailHelp">
+<!--                  {{form1|crispy}}-->
+                </div>
+                <div class="form-group">
+                  {{form1.password1|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.password2|as_crispy_field}}
+                </div>
+<!--                <div class="form-group">-->
+<!--                  {{form1.password2|as_crispy_field}}-->
+<!--                </div>-->
+                <div class="form-group">
+                  {{form1.name|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.email|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.contact_no|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.gender|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.dob|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.address|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.admission_no|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.roll_no|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.blood_group|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.course|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.year_of_joining|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.parent_name|as_crispy_field}}
+                </div>
+                <div class="form-group">
+                  {{form1.parent_contact|as_crispy_field}}
+                </div>
+                <div class="mt-3">
+                  <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn" >SIGN UP</button>
+                </div>
+                <div class="text-center mt-4 font-weight-light">
+                  Already have an account? <a href=" {% url 'login_view' %} " class="text-primary">Login</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- content-wrapper ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- base:js -->
+  <script src=" {% static 'panel/vendors/js/vendor.bundle.base.js' %} "></script>
+  <!-- endinject -->
+  <!-- inject:js -->
+  <script src=" {% static 'panel/js/off-canvas.js' %} "></script>
+  <script src=" {% static 'panel/js/hoverable-collapse.js' %} "></script>
+  <script src=" {% static 'panel/js/template.js' %} "></script>
+  <script src=" {% static 'panel/js/settings.js' %} "></script>
+  <script src=" {% static '33/js/todolist.js' %} "></script>
+  <!-- endinject -->
+</body>
+
+</html>

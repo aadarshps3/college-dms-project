@@ -1,0 +1,29 @@
+{% extends 'student_temp/index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Attendance</h4>
+    <table class="table">
+  <thead>
+  <tr>
+    <th scope="col">SINo</th>
+    <th scope="col">Date</th>
+    <th scope="col">Attendance</th>
+    <th scope="col">Time</th>
+  </tr>
+  </thead>
+  <tbody>
+  {% for attendance in attendances %}
+  <tr>
+    <td>{{forloop.counter}}</td>
+    <td>{{attendance.date}}</td>
+    <td>{{attendance.attendance}}</td>
+    <td>{{attendance.time}}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+  </div>
+</div>
+{% endblock %}

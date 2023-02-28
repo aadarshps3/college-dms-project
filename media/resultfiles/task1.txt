@@ -1,0 +1,3 @@
+Find Strings whose alternate characters are vowels.Given a list as ['EUTOPIA','COMPUTER','SUOIDEA','AIEEE','CHICKEN','EMELIA','BURGER','ONES','PUPPY','ZEBRA']
+write a program that prints all elements of the above-given list whose elements have alternative vowels.
+Expected output-['EUTOPIA','SUOIDEA','AIEEE','EMELIA','ONES']

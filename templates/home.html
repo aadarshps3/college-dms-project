@@ -1,0 +1,499 @@
+<!doctype html>
+{% load static %}
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>CSI - Free Bootstrap 5.2.2 CSS Template</title>
+
+
+    <link href=" {% static 'css/bootstrap.min.css' %} " rel="stylesheet">
+
+    <link href=" {% static 'css/bootstrap-icons.css' %} " rel="stylesheet">
+
+    <link href=" {% static 'css/templatemo-kind-heart-charity.css' %} " rel="stylesheet">
+
+
+
+
+</head>
+
+<body id="section_1">
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-8 col-12 d-flex flex-wrap">
+                    <p class="d-flex me-4 mb-0">
+                        <i class="bi-geo-alt me-2"></i>
+                        Christian muller women's college chombala
+                    </p>
+
+                    <p class="d-flex mb-0">
+                        <i class="bi-envelope me-2"></i>
+
+<!--                        <a href="christianmuller@gmail.com">-->
+                            christianmuller@gmail.com
+<!--                        </a>-->
+                    </p>
+                </div>
+
+<!--                <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">-->
+<!--                    <ul class="social-icon">-->
+<!--                       <li class="social-icon-item">-->
+<!--                            <a href="#" class="social-icon-link bi-whatsapp"></a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <div class="container">
+          <a class="navbar-brand" href=" # ">
+                <img src=" {% static 'images\logo (1)_46.jpg' %} " class="logo img-fluid" alt="csi">
+                <span>
+<!--                    <font color="red">-->
+                    CSI CHRISTIAN MULLER WOMEN'S COLLEGE
+                    <small>CSI college,Chombala</small>
+<!--                    </font>-->
+                </span>
+          </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href=" {% static '#top' %} ">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href=" {% static '#section_2' %} ">About</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a  class="nav-link click-scroll" href=" {% static '#section_5' %} ">Courses</a>
+
+
+
+
+
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link click-scroll dropdown-toggle" href=" {% static '#section_5' %} "
+                            id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Registration</a>
+
+                        <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+
+                            <li><a class="dropdown-item" href="{% url 'student_reg' %}">Student</a></li>
+
+                            <li><a class="dropdown-item" href="{% url 'teacher_reg' %}">Teacher</a></li>
+
+                             <li><a class="dropdown-item" href="{% url 'principal_reg' %}">Principal</a></li>
+
+                            <li><a class="dropdown-item" href="{% url 'manager_reg' %}">Manager</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="nav-item ms-3">
+                        <a class="nav-link custom-btn custom-border-btn btn" href=" {% url 'login_view' %} ">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <section class="hero-section hero-section-full-height">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 p-0">
+                        <div id="hero-slide" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src=" {% static 'images/slide/img.jpg' %} "
+                                        class="carousel-image img-fluid" alt="...">
+
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src=" {% static 'images/slide/flower.jpg' %} "
+                                        class="carousel-image img-fluid" alt="...">
+
+
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src=" {% static 'images/slide/sky.jpg' %} "
+                                        class="carousel-image img-fluid" alt="...">
+
+
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#hero-slide"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button" data-bs-target="#hero-slide"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-10 col-12 text-center mx-auto">
+                        <h2 class="mb-5">Infrastructure And Facilities</h2>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href=" # " class="d-block">
+                                <img src=" {% static 'images/slide/lab.png' %} " class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text"><strong>Laboratories</strong></p>
+                             <p>The college has departmental based laboratories facility for the students</p>
+                           </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href=" # " class="d-block">
+                                <img src=" {% static 'images/slide/lib.png' %} " class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text"><strong>Library</strong> </p>
+                                <p>The college has a library facility for all students</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href=" #" class="d-block">
+                                <img src=" {% static 'images/slide/food.png' %} " class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text"> <strong>Canteen</strong></p>
+                                <p>The college has a canteen facility for staff and students.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="featured-block d-flex justify-content-center align-items-center">
+                            <a href=" # " class="d-block">
+                                <img src=" {% static 'images/slide/hostell.jpg' %} " class="featured-block-image img-fluid" alt="">
+
+                                <p class="featured-block-text"><strong>Hostel</strong> </p>
+                                <p>The college has a girl's hostel facility which provides good hostel accommodation for the students.</p>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section-padding section-bg" id="section_2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                        <img src="{% static 'images/slide/princi.jpg' %}"
+                            class="custom-text-box-image img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-6 col-12">
+                        <div class="">
+                            <h2 class="mb-2" align="center">History</h2><br>
+
+                            <h5 class="mb-3"></h5>
+
+                            <b><p align="center" class="mb-0">
+                                Christian Muller Women's College(CMWC) established by the North Kerala Diocese of the Church of South India (CSI) is a response to a longlasting need of the people of  Chombala and Vadakara area for higher education.It was the Basal Evangelical Missionary Society, or Basal Mission which started working at the Malabar Coast,that brought basic education and opened it's doors of learning to the backward classes and communities in Malabar. <br>CMWC will be a self-financing Institution and will aim at imparting high quality education in Arts and Science and will now offer graduate level programmes in subjects have a ready demand in market.<br></p></b><br>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="">
+                                    <h5 class="mb-3"></h5>
+                                    <ul>
+                                    <li>Established:2013</li>
+                                    <li>Affilated to:University of Calicut</li>
+                                    </ul>
+
+<!--                                        <ul class="custom-list mt-2">-->
+<!--                                       <li class="">-->
+<!--                                            <i class="bi-check custom-text-box-icon me-2"></i>-->
+
+<!--                                        </li>-->
+
+<!--                                        <li class="custom-list-item d-flex">-->
+<!--                                            <i class="bi-check custom-text-box-icon me-2"></i>-->
+
+<!--                                        </li>-->
+<!--                                    </ul>-->
+                                </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+<!--        <section class="about-section section-padding">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+
+
+<!--                    <div class=" ">-->
+<!--                        <div class="custom-text-block">-->
+<!--                            <h2 class="mb-0">Sandy Chan</h2>-->
+
+<!--                            <p class="text-muted mb-lg-4 mb-md-4">Founding Partner</p>-->
+
+<!--                            <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito Professional-->
+<!--                                charity theme based</p>-->
+
+<!--                            <p>Sed leo nisl, posuere at molestie ac, suscipit auctor mauris. Etiam quis metus</p>-->
+
+<!--                            <ul class="social-icon mt-4">-->
+<!--                                <li class="social-icon-item">-->
+<!--                                    <a href="#" class="social-icon-link bi-twitter"></a>-->
+<!--                                </li>-->
+
+<!--                                <li class="social-icon-item">-->
+<!--                                    <a href="#" class="social-icon-link bi-facebook"></a>-->
+<!--                                </li>-->
+
+<!--                                <li class="social-icon-item">-->
+<!--                                    <a href="#" class="social-icon-link bi-instagram"></a>-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+
+
+
+
+       <section class="section-padding" id="section_3">
+            <div class="container">
+
+
+                    <div class="col-lg-12 col-12 text-center mb-4">
+                        <h2>COURSES</h2><br>
+                    </div>
+      <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block-wrap">
+                            <img src=" {% static 'images/slide/bca.png' %} "
+                                class="custom-block-image img-fluid" alt="">
+
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+
+                                    <h5 class="mb-3" align="center">BCA</h5>
+
+                                    <p>BCA(Bachelor's In Computer Application) is a 3-year undergraduate degree programme that focuses on knowledge on the basis of computer application and software development. </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                       <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block-wrap">
+                            <img src=" {% static 'images/slide/ba.jpg' %} "
+                                class="custom-block-image img-fluid" alt="">
+
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+
+                                    <h5 class="mb-3" align="center">BA ENGLISH</h5>
+
+                                    <p>BA ENGLISH(Bachelor's of Arts) is a 3-year undergraduate degree programme that focuses on English Literature, cultural studies, the history of English literature.    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block-wrap">
+                            <img src=" {% static 'images/slide/bcom.jpeg' %} "
+                                class="custom-block-image img-fluid" alt="">
+
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+
+                                    <h5 class="mb-3" align="center">BCOM</h5>
+
+                                    <p>BCOM(Bachelor's In Commerce) is a 3-year undergraduate degree programme that focuses on knowledge on the basis of Analytical skills, Financial Literacy, Business Laws.  </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block-wrap">
+                            <img src=" {% static 'images/slide/psychology.jfif' %} "
+                                class="custom-block-image img-fluid" alt="">
+
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+                                    <h5 class="mb-3" align="center">BSC Psychology</h5>
+
+                                    <p>Bachelor In Science is an undergraduate course with a duration of 3-years.This course explores the interactions between the human mind,behaviour and experience.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                       <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="custom-block-wrap">
+                             <img src="  {% static 'images/slide/mscc.png' %} "
+                                class="custom-block-image img-fluid" alt="">
+                            <div class="custom-block">
+                                <div class="custom-block-body">
+                                    <h5 class="mb-3"align="center">Msc.Psychology</h5>
+<p>MSC psychology is a 2-year postgraduate course that focuses on the practical application of research methods related to human behaviour.</p>
+</div>
+                                </div>
+                            </div>
+                        </div>
+ </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3">Quick Links</h5><br>
+
+                    <ul class="footer-menu">
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">HOME</a></li>
+
+<!--                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Infrastructure</a></li>-->
+
+<!--                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Courses</a></li>-->
+
+                    </ul>
+                </div>
+
+                    <p class="text-white d-flex mb-2">
+                        <i class="bi-telephone me-2"></i>
+
+<!--                        <a href=" {% static 'tel: 305-240-9671' %} " class="site-footer-link">&ndash;&gt;-->
+                            0496 2501177
+<!--                        </a>-->
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <i class="bi-envelope me-2"></i>
+
+<!--                        <a href=" # " class="site-footer-link">&ndash;&gt;-->
+                           christianmullercollege@gmail.com
+<!--                        </a>-->
+                    </p>
+
+                    <p class="text-white d-flex mt-3">
+                        <i class="bi-geo-alt me-2"></i>
+                        Chombala,Vadakara,Kerala 673308
+                    </p>
+
+                    <a href="#" class="custom-btn btn mt-3">Get Direction</a>
+                </div>
+            </div>
+        </div>
+
+<!--        <div class="site-footer-bottom">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+
+<!--                    <div class="col-lg-6 col-md-7 col-12">-->
+<!--                        <p class="copyright-text mb-0">Copyright © 2036 <a href="#">Kind Heart</a> Charity Org.-->
+<!--                            Design: <a href="https://templatemo.com" target="_blank">TemplateMo</a><br>Distribution:-->
+<!--                            <a href="https://themewagon.com">ThemeWagon</a>-->
+<!--                        </p>-->
+<!--                    </div>-->
+
+<!--                    <div class=" d-flex justify-content-center align-items-center mx-auto">-->
+<!--                        <ul class="social-icon">-->
+<!--                            <li class="social-icon-item">-->
+<!--                                <a href="#" class="social-icon-link bi-twitter"></a>-->
+<!--                            </li>-->
+
+<!--                           <li class="social-icon-item">-->
+<!--                                <a href="#" class="social-icon-link bi-facebook"></a>-->
+<!--                            </li>-->
+
+<!--                            <li class="social-icon-item">-->
+<!--                                <a href="#" class="social-icon-link bi-instagram"></a>-->
+<!--                            </li>-->
+
+<!--                            <li class="social-icon-item">-->
+<!--                                <a href="#" class="social-icon-link bi-linkedin"></a>-->
+<!--                            </li>-->
+<!--                            </li>-->
+<!--                        </ul>-->
+
+<!--                    </div>-->
+
+<!--               </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </header>-->
+
+    <!-- JAVASCRIPT FILES -->
+<    <script src=" {% static 'js/jquery.min.js' %} "></script>
+    <script src=" {% static 'js/bootstrap.min.js' %} "></script>
+    <script src=" {% static 'js/jquery.sticky.js' %} "></script>
+    <script src=" {% static 'js/click-scroll.js' %} "></script>
+    <script src=" {% static 'js/counter.js' %} "></script>
+    <script src=" {% static 'js/custom.js' %} "></script>
+</body>
+
+</html>

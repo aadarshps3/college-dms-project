@@ -1,0 +1,31 @@
+{% extends 'student_temp/index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<style>
+  .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.title {
+  color: grey;
+  font-size: 18px;
+}
+</style>
+<div class="card">
+  <div class="card-body">
+    <div class="card-title">My Details</div>
+    {% for i in data %}
+    <h1>{{i.name}}</h1>
+    <p class="title">{{i.username}}</p>
+    <p>Gender:&nbsp;{{i.gender}}</p>
+    <p>Date Of Birth:&nbsp;{{i.dob}}</p>
+    <p>Blood Group:&nbsp;{{i.blood_group}}</p>
+    <p>Course:&nbsp;{{i.course}}</p>
+    <p>Admission No:&nbsp;{{i.admission_no}}</p>
+    <p>Contact Info:&nbsp;{{i.contact_no}}</p>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

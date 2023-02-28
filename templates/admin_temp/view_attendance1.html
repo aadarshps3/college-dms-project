@@ -1,0 +1,39 @@
+{% extends 'admin_temp/index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="card">
+  <div class="card-body">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Date</th>
+
+
+      <th scope="col">First year</th>
+      <th scope="col">Second year </th>
+      <th scope="col"> Final year</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for attendance in attendances %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <td>{{ attendance}}</td>
+
+
+
+           <td><a href="{% url 'day_attendance_admin_1' attendance %}" class="btn btn-info">View</a></td>
+      <td><a href="{% url 'day_attendance_admin_2' attendance %}" class="btn btn-info">View</a></td>
+      <td><a href="{% url 'day_attendance_admin_3' attendance %}" class="btn btn-info">View</a></td>
+
+
+    </tr>
+  {% endfor %}
+
+
+  </tbody>
+</table>
+  </div>
+</div>
+{% endblock %}

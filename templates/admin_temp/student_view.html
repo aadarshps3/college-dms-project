@@ -1,0 +1,59 @@
+{% extends 'admin_temp/index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="card">
+  <div class="card-body">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+      <form method="get" class="form-inline d-flex">
+        {{studentFilter.form|crispy}}
+        <button class="btn btn-info" style="float:right"type="submit">Search</button>
+
+      </form>
+    </div>
+    <h4 class="card-title">Students</h4>
+
+    <div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Admission No.</th>
+      <th scope="col">Roll No.</th>
+      <th scope="col">Name</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Dob</th>
+      <th scope="col">Year of Joining</th>
+      <th scope="col">Blood Group</th>
+      <th scope="col">Course</th>
+      <th scope="col">Mobile No.</th>
+      <th scope="col">Parent Name</th>
+      <th scope="col">Parent Contact No.</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in data %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <th scope="row">{{i.admission_no}}</th>
+      <td>{{i.roll_no}}</td>
+      <td>{{i.name}}</td>
+      <td>{{i.gender}}</td>
+      <td>{{i.dob}}</td>
+      <td>{{i.year_of_joining}}</td>
+      <td>{{i.blood_group}}</td>
+      <td>{{i.course}}</td>
+      <td>{{i.contact_no}}</td>
+      <td>{{i.parent_name}}</td>
+      <td>{{i.parent_contact}}</td>
+      <td><a class="btn btn-success" href="{% url 'Students_edit' i.id %}">Edit</a></td>
+      <td><a class="btn btn-danger" href="{% url 'Students_delete' i.id %}">Delete</a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+      </div>
+  </div>
+</div>
+{% endblock %}

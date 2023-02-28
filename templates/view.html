@@ -1,0 +1,38 @@
+{% extends 'index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="col-lg-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Time Table</h4>
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th>sl No.</th>
+                          <th>SUBJECT 1</th>
+                          <th>SUBJECT 2</th>
+                          <th>SUBJECT 3</th>
+                          <th>SUBJECT 4</th>
+                          <th>SUBJECT 5</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                      {% for i in data %}
+                        <tr>
+                          <td class="py-1">{{ forloop.counter }}</td>
+                          <td>{{ i.subject1 }}</td>
+                          <td>{{ i.subject2 }}</td>
+                          <td>{{ i.subject3 }}</td>
+                          <td>{{ i.subject4 }}</td>
+                          <td>{{ i.subject5 }}</td>
+
+                        </tr>
+                      {% endfor %}
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+{% endblock %}

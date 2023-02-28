@@ -1,0 +1,40 @@
+{% extends 'student_temp/index.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Internal Marks</h4>
+    <div class="table-responsive">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Student</th>
+        <th scope="col">Roll_no</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Seminar</th>
+      <th scope="col">Assignment</th>
+      <th scope="col">Test Paper</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in data %}
+    <tr>
+      <th scope="row">{{forloop.counter}}</th>
+      <td>{{i.student}}</td>
+       <td>{{i.Roll_No}}</td>
+      <td>{{i.subject}}</td>
+      <td>{{i.seminar}}</td>
+      <td>{{i.assignment}}</td>
+      <td>{{i.test_paper}}</td>
+      <td>{{i.get_total_marks}}</td>
+      <td></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+      </div>
+  </div>
+</div>
+{% endblock %}
